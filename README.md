@@ -1,6 +1,6 @@
 # 💸 Placid – Makes Money Smoother
 
-**Live Site ➡️ [Placid – Launch Now](https://urooj-vx.github.io/Placid/)**
+**Live Site ➡️ [Placid – Launch Now](https://urooj-vx.github.io/Placid-Makes-Money-Smoother/)**
 
 Placid is a beautiful, beginner-friendly financial toolkit built with 💛 vanilla HTML, CSS, JavaScript, and [Chart.js](https://www.chartjs.org/). Whether you're just starting out with personal finance or looking for fast, visual insights — Placid is your go-to open-source platform.
 
