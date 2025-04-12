@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Capital Gains Calculator</title>
+  <link rel="icon" type="image/png" href="../Images and Videos/logo.png">
+  <link rel="stylesheet" href="../assets/css/shared.css" />
+</head>
+<body>
+  <header class="nav-container">
+    <div class="logo">
+      <img src="../Images and Videos/logo.png" alt="Placid Logo">
+      <span>Placid</span>
+    </div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../index.html#tools" class="active">Tools</a>
+      <a href="../about.html">About</a>
+      <button class="get-started">Get Started</button>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <div class="left-panel">
+      <h2>Capital Gains Calculator</h2>
+
+      <label for="purchase">Purchase Price (₹): <span id="purchase-value">100000</span></label>
+      <input type="range" id="purchase" min="10000" max="1000000" value="100000" step="10000" />
+
+      <label for="sale">Sale Price (₹): <span id="sale-value">150000</span></label>
+      <input type="range" id="sale" min="10000" max="2000000" value="150000" step="10000" />
+
+      <label for="duration">Holding Period (Years): <span id="duration-value">2</span></label>
+      <input type="range" id="duration" min="0" max="10" value="2" step="1" />
+
+      <div class="summary-card">
+        <h3>Capital Gain Breakdown</h3>
+        <canvas id="gainChart" width="300" height="300"></canvas>
+      </div>
+
+    </div>
+
+    <div class="right-panel">
+      <div class="summary-card">
+        <h3>Purchase Price</h3>
+        <p>₹<span id="purchase-summary">100000</span></p>
+      </div>
+      <div class="summary-card">
+        <h3>Sale Price</h3>
+        <p>₹<span id="sale-summary">150000</span></p>
+      </div>
+      <div class="summary-card">
+        <h3>Capital Gain</h3>
+        <p>₹<span id="gain-summary">50000</span></p>
+      </div>
+
+      <div class="summary-card">
+        <button id="downloadBtn">Download Report</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../assets/js/capital-gains.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placid</title>
+    <link rel="icon" type="image/png" href="./Images and Videos/logo.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./Images and Videos/logo.png" alt="Placid logo">
+                <span>Placid</span>
+            </div>
+
+            <nav>
+                <a href="./index.html" class="active">Home</a>
+                <a href="./index.html#tools">Tools</a>
+                <a href="./about.html">About</a>
+                <button class="get-started">Get Started</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <p class="badge">✨ Smart financial tools for everyone</p>
+        <h1>Placid - Makes Money Smoother</h1>
+        <p class="subheading">Helping you understand your money - not just count it.</p>
+
+        <div class="buttons">
+            <button class="start-btn" onclick="window.open('./index.html#tools')" >Start Calculating
+                <span class="arrow"><i class="fas fa-arrow-right" style="margin-left: 8px;"></i></span></button>
+            <button class="learn-btn" onclick="window.open('./about.html', '_blank')">Learn More</button>
+        </div>
+    </section>
+    <div class="scroll-wrapper">
+        <div class="scroll-hint">
+            <span class="line"></span>
+            <span class="text">Scroll to explore</span>
+            <span class="line"></span>
+        </div>
+    </div>
+
+    <section class="tools-section" id="tools">
+        <h2>Our Tools</h2>
+        <p class="tools-subheading">
+            Simple, intuitive calculators and visualizers to help you make better financial decisions
+        </p>
+
+        <div class="tools-category">
+            <h3><i class="fas fa-dollar-sign"></i>Investment Tools</h3>
+            <div class="cards">
+                <div class="card" onclick="window.open('./pages/simple-interest.html', '_blank')">
+                    <span><i class="fas fa-calculator"></i></span>
+                    <h4>Simple Interest</h4>
+                    <p class="brief">How much will I earn from a fixed deposit over time?</p>
+                    <div class="extra-info">
+                        <p>This calculator helps you determine interest earned on a fixed principal over time.</p>
+                    </div>
+                </div>
+
+
+                <div class="card" onclick="window.open('./pages/compound-interest.html', '_blank')">
+                    <span><i class="fas fa-chart-line"></i></span>
+                    <h4>Compound Interest</h4>
+                    <p class="brief">See the power of compounding on your investments over years</p>
+                    <div class="extra-info">
+                        <p>Visualize your gains as interest earns interest over time.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="window.open('./pages/sip.html', '_blank')">
+                    <span><i class="fas fa-coins"></i></span>
+                    <h4>SIP Calculator</h4>
+                    <p class="brief">How much will I get if I invest ₹X per month for 10 years?</p>
+                    <div class="extra-info">
+                        <p>Useful for planning monthly investments into mutual funds.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="window.open('./pages/portfolio-visualizer.html', '_blank')">
+                    <span><i class="fas fa-chart-pie"></i></span>
+                    <h4>Portfolio Visualizer</h4>
+                    <p class="brief">Visualize how your investments are distributed and performing</p>
+                    <div class="extra-info">
+                        <p>See a breakdown of your investment allocations and performance.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="tools-category">
+            <h3><i class="fas fa-file-invoice-dollar"></i> Tax Tools</h3>
+            <div class="cards">
+                <div class="card" onclick="window.open('./pages/income-tax.html', '_blank')">
+                    <span><i class="fas fa-percent"></i></span>
+                    <h4>Income Tax Calculator</h4>
+                    <p class="brief">How much tax do I owe based on my income?</p>
+                    <div class="extra-info">
+                        <p>Enter your income to estimate your annual tax based on current slabs.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="window.open('./pages/GST.html', '_blank')">
+                    <span><i class="fas fa-receipt"></i></span>
+                    <h4>GST Calculator</h4>
+                    <p class="brief">Calculate GST on your products and services</p>
+                    <div class="extra-info">
+                        <p>Enter base price and tax rate to get inclusive or exclusive amounts.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="window.open('./pages/capital-gains.html', '_blank')">
+                    <span><i class="fas fa-coins"></i></span>
+                    <h4>Capital Gains Tax</h4>
+                    <p class="brief">How much tax on your stock or property gains?</p>
+                    <div class="extra-info">
+                        <p>Calculate tax on short-term and long-term capital gains.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="window.open('./pages/HRA.html', '_blank')">
+                    <span><i class="fas fa-wallet"></i></span>
+                    <h4>HRA Calculator</h4>
+                    <p class="brief">How much HRA exemption can you claim?</p>
+                    <div class="extra-info">
+                        <p>Check how much of your rent is tax-deductible under Section 10(13A).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+ 
+    <section class="why-placid">
+        <h2>Why the name Placid?</h2>
+        <div class="why-content">
+            <div class="quotes">
+                <div class="quote">
+                    <i class="fas fa-quote-left"></i> Let numbers work for you, not against you.
+                </div>
+                <div class="quote">
+                    <i class="fas fa-quote-left"></i> See your money grow - calmly, clearly.
+                </div>
+                <div class="quote">
+                    <i class="fas fa-quote-left"></i> Finance without the friction.
+                </div>
+            </div>
+
+            <div class="description">
+                <p>Money is stressful. Placid smooths it out. We simplify finance — calmly and clearly.</p>
+                <p>We believe financial tools shouldn't feel like complicated spreadsheets. They should be intuitive, visual, and actually helpful.</p>
+                <p>Our mission is to take the anxiety out of financial planning by creating a space that feels as peaceful as a placid lake – where you can clearly see your financial future.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div>
+                  <img class="footer-logo" src="./Images and Videos/logo.png" alt="" srcset="">         
+              <h3>Placid</h3>
+              <p>Simplifying finance for beginners through clean, interactive tools. Making money management calmer and clearer.</p>
+            </div>
+          </div>
+      
+          <div class="footer-links">
+            <h4>Links</h4>
+            <ul>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="./about.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2025 Placid. All rights reserved.</p>
+          <p class="made-in">Made with <span>❤️</span> in India</p>
+        </div>
+      </footer>
+</body>
+
+</html>

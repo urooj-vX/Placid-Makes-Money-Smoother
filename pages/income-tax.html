@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Income Tax Calculator</title>
+  <link rel="icon" type="image/png" href="../Images and Videos/logo.png">
+  <link rel="stylesheet" href="../assets/css/shared.css" />
+</head>
+<body>
+  <header class="nav-container">
+    <div class="logo">
+      <img src="../Images and Videos/logo.png" alt="Placid Logo">
+      <span>Placid</span>
+    </div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../index.html#tools" class="active">Tools</a>
+      <a href="../about.html">About</a>
+      <button class="get-started">Get Started</button>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <div class="left-panel">
+      <h2>Income Tax Calculator</h2>
+      <label for="annualIncome">Annual Income (₹): <span id="income-value">500000</span></label>
+      <input type="range" id="annualIncome" min="100000" max="3000000" value="500000" step="50000" />
+
+      <label for="deductions">Deductions (₹): <span id="deduction-value">50000</span></label>
+      <input type="range" id="deductions" min="0" max="200000" value="50000" step="10000" />
+
+      <div class="summary-card">
+        <h3>Tax Distribution</h3>
+        <canvas id="taxChart" width="300" height="300"></canvas>
+      </div>
+
+    </div>
+
+    <div class="right-panel">
+      <div class="summary-card">
+        <h3>Taxable Income</h3>
+        <p>₹<span id="taxable-summary">450000</span></p>
+      </div>
+      <div class="summary-card">
+        <h3>Estimated Tax</h3>
+        <p>₹<span id="tax-summary">0</span></p>
+      </div>
+      <div class="summary-card">
+        <h3>Post-Tax Income</h3>
+        <p>₹<span id="posttax-summary">450000</span></p>
+      </div>
+
+      <div class="summary-card">
+        <button id="downloadBtn">Download Report</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../assets/js/income-tax.js"></script>
+</body>
+</html>
